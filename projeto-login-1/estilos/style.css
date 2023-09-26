@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: rgb(191, 191, 191);
+    background-image: linear-gradient(to left, rgb(47, 47, 47), rgb(128, 128, 128));
     height: 100vh;
     width: 100vw;
 }
@@ -36,14 +36,22 @@ section#login{
     background-color: gray;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
+
+    transition: width .5s, heigth .5s;
+    transition-timing-function: ease;
 }
 
 section#login div#imagem-login{
+    display: block;
     height: 210px;
     
     background: #5f2c82 url(../imagens/imagem-login.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+div#formulario-login{
+    display: block;
 }
 
 div#formulario-login h2{
