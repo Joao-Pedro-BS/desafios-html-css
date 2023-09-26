@@ -8,6 +8,7 @@
     
     section#login{
         width: 80vw;
+        height: 300px;
     }
 
     section#login div#imagem-login{
@@ -16,30 +17,42 @@
         height: 100%;
     }
 
-    seciton#login div#formulario-login{
+    section#login div#formulario-login{
         float: right;
         width: 70%;
         height: 100%;
 
     }
+
+    div.campo input{
+        width: 88%;
+    }
 }
 
 @media screen and (min-width: 992px){
+    body{
+        background-image: linear-gradient(to left, rgb(26, 26, 26), rgb(128, 128, 128));
+   }
+    
     section#login{
         width: 80vw;
     }
 
     section#login div#imagem-login{
         float: right;
-        width: 30%;
+        width: 40%;
         height: 100%;
     }
 
-    seciton#login div#formulario-login{
+    section#login div#formulario-login{
         float: left;
-        width: 70%;
+        width: 60%;
         height: 100%;
 
+    }
+
+    div.campo input{
+        width: 89%;
     }
 
 }

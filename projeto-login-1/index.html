@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <main>
@@ -18,15 +19,24 @@
                 <p>
                     Faça login para acessar sua conta.
                 </p>
-                <!-- <form action="">
-                    <input type="text" name="" id="">
-                    <input type="password" name="" id="">
-                    <input type="submit" value="Entrar">
+                <form action="#">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">login</span>
+                        <input type="email"  id="ilogin" placeholder="Digite seu email" required>
+                        <label for="ilogin">Login</label>
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">lock</span>
+                        <input type="password" id="isenha" placeholder="Digite sua senha" required minlength="8">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    
+                    <div class="botao">
+                        <input type="submit" value="Entrar">
+                        <a href="#" class="esqueci-a-senha">Esqueci a senha</a>
+                    </div>
                 </form>
-                
-                <div id="botão-esqueci-senha">
-                    <a href="#">Esqueci a senha</a>
-                </div> -->
             </div>
         </section>
     </main>
