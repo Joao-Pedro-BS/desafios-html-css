@@ -1,6 +1,5 @@
 @charset "UTf-8";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -43,6 +42,8 @@ div#foto-perfil{
 div#foto-perfil img{
     border-radius: 50%;
     width: 133px;
+    height: 135px;
+    transform: translate(-0.5px, -2px);
 }
 
 aside#perfil h1{
@@ -51,4 +52,39 @@ aside#perfil h1{
 
 aside#perfil small{
     font-size: 0.7em;
+}
+
+div.memory {
+    padding: 10px;
+}
+
+div.memory small {
+    font-size: 0.6em;
+    color: #bebebf;
+
+}
+
+div.memory a{
+    text-decoration: none;
+}
+
+div.memory h1{
+    text-align: justify;
+    font-size: 1.8em;
+    margin: 15px 0px;
+}
+
+div.memory img{
+    display: block;
+    margin: auto;
+
+    width: 350px;
+    border-radius: 8px;
+}
+
+div.memory p{
+    color: #bebebf;
+    text-align: justify;
+    margin-top: 15px;
+    line-height: 25px;
 }
