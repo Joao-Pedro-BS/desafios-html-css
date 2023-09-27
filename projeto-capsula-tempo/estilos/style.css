@@ -1,5 +1,12 @@
 @charset "UTf-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap');
+
+@keyframes animacao {
+    from{width: 200px; height: 200px;}
+    to {width: 133px; height: 135px;}
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -37,6 +44,9 @@ div#foto-perfil{
     height: 140px;
     border: 4px solid #727275;
     border-radius: 50%;
+    animation-name: animacao;
+    animation-duration: 1s;
+
 }
 
 div#foto-perfil img{
@@ -44,6 +54,8 @@ div#foto-perfil img{
     width: 133px;
     height: 135px;
     transform: translate(-0.5px, -2px);
+    animation-name: animacao;
+    animation-duration: 1s;
 }
 
 aside#perfil h1{
@@ -80,6 +92,12 @@ div.memory img{
 
     width: 350px;
     border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+div.memory img:active {
+    transform: scale(1.1);  
 }
 
 div.memory p{
