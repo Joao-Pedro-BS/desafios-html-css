@@ -17,6 +17,7 @@
 
     div#foto-perfil{
         position: absolute;
+        
         top: 30%;
         left: 20%;
 
@@ -24,7 +25,9 @@
     }
 
     main{
+        overflow: auto;
         float: right;
+
         width: 50%;
         height: 100vh;
         
