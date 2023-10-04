@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5748de31;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+    width: 320px;
+    height: 450px;
+
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #ffffff;
+    text-align: center;
+    
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+    padding: 50px 20px 50px 20px;
+}
+
+main img{
+    width: 250px;
+    height: 200px;
+    max-width: 400px;
+
+    object-fit: cover;
+    border-radius: inherit;
+
+    margin: -90px 0px 20px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+section h2{
+    margin-bottom: 10px;
+}
+
+section small{
+    color: rgba(0, 0, 0, 0.9);
+}
+
+section p{
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+div#btn{
+    margin-top: 15px;
+    padding: 15px 40px;
+    
+    background-color: #5848de;
+    border-radius: 40px;
+}
+
+div#btn a{
+    color: #f8f8f8;
+    text-decoration: none;
+
+}
+
+div#btn:hover{
+    background-color: #332a80;
+}
