@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@media screen and (min-width: 768px){    
+    body{
+        display: flex;
+        flex-flow: row nowrap;
+
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    div#card-1{
+        margin:  0px 0px 0px 20px;
+    }
+
+    div#card-2{
+        margin: 0px 50px 0px 50px;
+    }
+
+    div#card-3{
+        margin: 0px 20px 0px 0px;
+    }
+}
