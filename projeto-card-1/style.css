@@ -19,7 +19,7 @@ body{
     height: 100vh;
     
     display: grid;
-    grid-template-columns: 420px;
+    grid-template-columns: 390px;
     grid-template-rows: 450px 200px 450px;
     grid-template-areas: "card-1" "salto" "card-2";
 
