@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Encurtador de URL</title>
+</head>
+<body>
+    <div class="container">
+        <i class="bx bx-link-alt"></i>
+        <h1>Encurtador de URL</h1>
+        
+        <label for="url-encurtar">Digite a URL para encurtar </label>
+        <input type="text" id="url-encurtar" placeholder="https://exemplo.com">
+
+        <div class="buttons">
+            <button id="btn-reiniciar">Reiniciar</button>
+            <button id="btn-encurtar">Encurtar</button>
+        </div>
+
+        <label for="url-encurtada">URL Encurtada: </label>
+        <textarea  id="url-encurtada"rows="3" readonly></textarea>
+    </div>  
+    
+    <script src="script.js"></script>
+</body>
+</html>

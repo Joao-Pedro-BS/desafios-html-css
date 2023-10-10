@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: rgba(43, 122, 226, 0.3);
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 20px 30px;
+
+    height: 75vh;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.container i{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+label{
+    text-align: left;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+input, textarea{
+    border: 2px solid black;
+    border-radius: 4px;
+
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button{
+    width: 100%;
+    padding: 8px;
+
+    border: 2px solid black;
+    border-radius: 4px;
+    
+    background-color: transparent;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: black;
+    color: white;
+}
+
+.container textarea{
+    resize: none;
+}
