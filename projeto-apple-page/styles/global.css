@@ -109,6 +109,72 @@ main .spirited-section .actors-names p{
     line-height: 40px;
 }
 
-/* main .spirited-section .spirited-text{
+main .spirited-section img{
+    width: 100%;
+    height: auto;
+}
 
-} */
+main .spirited-section .spirited-text{
+    top: 600px;
+}
+
+main .spirited-section .spirited-text p{
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 0.11px;
+}
+
+main .spirited-section .spirited-text span{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.11px;
+}
+
+main .iphone-14-section img{
+    width: 100%;
+    height: auto;
+}
+main .iphone-14-section > div {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);   
+}
+main .iphone-14-section .iphone-14-section-text{
+    top: 50px;
+}
+
+main .iphone-14-section .iphone-14-section-text h1{
+    font-size: 50px;
+    color: #1D1D1F;
+    font-weight: bold;
+    line-height: 60px;
+    letter-spacing: -0.28px;
+}
+
+main .iphone-14-section .iphone-14-section-text h2{
+    font-size: 28px;
+    color: #1D1D1F;
+    font-weight: 400;
+}
+
+main .iphone-14-section .iphone-14-section-links{
+    top: 160px;
+    display: flex;
+    justify-content: space-between;    
+    gap: 25px;
+}
+
+main .iphone-14-section .iphone-14-section-links a{
+    cursor: pointer;
+    font-size: 20px;
+    color: #0066CC;
+    line-height: 30px;
+    letter-spacing: 0.23px;
+    text-decoration: none;
+}
+
+main .iphone-14-section .iphone-14-section-links a:hover{
+    text-decoration: underline;
+}
