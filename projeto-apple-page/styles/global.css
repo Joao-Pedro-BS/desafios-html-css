@@ -376,3 +376,93 @@ main .mini-content-watch .mini-content-watch-links a{
 main .mini-content-watch .mini-content-watch-links a:hover{
     text-decoration: underline;
 }
+
+main .mini-content-section-watch-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .mini-content-watch-ultra img{
+    width: 100%;
+    height: auto;
+}
+
+main .mini-content-watch-ultra > div{
+    position: absolute;
+    left: 14%;
+    transform: translateX(-14%);
+}
+
+main .mini-content-watch-ultra .mini-content-watch-ultra-text{
+    top: 60px;
+}
+
+main .mini-content-watch-ultra .mini-content-watch-ultra-text p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.34px;
+    color: #1D1D1F;
+    padding-top: 10px;
+}
+
+main .mini-content-watch-ultra .mini-content-watch-ultra-links{
+    top: 160px;
+    left: 21.5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+
+}
+
+main .mini-content-watch-ultra .mini-content-watch-ultra-links a{
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+    color: #0066CC;
+    line-height: 20px;
+    letter-spacing: -0.35px;
+    text-decoration: none;
+}
+
+main .mini-content-card img{
+    width: 100%;
+    height: auto;
+}
+
+main .mini-content-card > div{
+    position: absolute;
+    left: 62%;
+}
+
+main .mini-content-card .mini-content-card-text{
+    top: 60px;
+}
+
+main .mini-content-card .mini-content-card-text p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.34px;
+    color: #1D1D1F;
+    padding-top: 10px;
+
+}
+
+main .mini-content-card .mini-content-card-links{
+    top: 170px;
+    left: 70.5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+main .mini-content-card .mini-content-card-links a{
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+    color: #0066CC;
+    line-height: 20px;
+    letter-spacing: -0.37px;
+    text-decoration: none;
+}
