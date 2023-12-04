@@ -75,7 +75,7 @@ div#text-content a{
     div#text-content{
         position: absolute;
         width: 95vw;
-        bottom: -18px;
+        bottom: 0px;
 
         margin: auto;
         border-radius: 20px 20px 0 0;
