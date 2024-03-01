@@ -5,6 +5,11 @@
     to{width: 445px; height: 445px;}
 }
 
+@keyframes entering {
+    from{opacity: 0; transform: translateY(-200px);}
+    to{opacity: 1; transform: translateY(0);}
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -92,4 +97,25 @@ button{
 
 button:hover{
     background-color: #295580;
+}
+
+@media screen and (max-width: 920px) {
+    
+    #container img{
+        width: 50%;
+        animation-name: entering;
+        animation-duration: 1.5s;    
+    }
+
+    #container form h2{
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 20px    
+    } 
+
+    #container form{
+        width: 50%;
+    }
+
 }
