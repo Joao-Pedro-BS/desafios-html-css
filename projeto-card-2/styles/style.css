@@ -96,7 +96,7 @@ button{
 }
 
 button:hover{
-    background-color: #295580;
+    background-color: w;
 }
 
 @media screen and (max-width: 920px) {
