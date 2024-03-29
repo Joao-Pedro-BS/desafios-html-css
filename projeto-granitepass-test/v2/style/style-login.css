@@ -122,17 +122,6 @@ body{
     justify-content: center;
 }
 
-.Go-btn img{
-    width: 40px;
-    height: 45px;
-}
-
-.Go-btn img:hover{
-    width: 55px;
-    height: 60px;
-    transition: 1s;
-}
-
 footer{
     width: 100vw;
     color: rgb(255,255,255);
