@@ -123,6 +123,31 @@ body{
     margin-right: 5px;
 }
 
+.error-balloon{
+    width: 350px;
+    height: 50px;
+    
+    top: 21%;
+    left: 50.5%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: entering-2;
+    animation-duration: 1s;
+}
+
+.error-message{
+    padding: 10px;
+    font-weight: 300;   
+    color: #808080;
+}
+
 #screenCards{
     display: flex;
     padding: 80px;
@@ -135,7 +160,7 @@ body{
     padding: 20px;
     
     width: 348px;
-    height: 150px;
+    height: 200px;
     
     border: 1px solid #00DC82;
     border-radius: 16px;
@@ -145,12 +170,19 @@ body{
     animation-duration: 1s;    
 }
 
+.noteTitle p{
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+}
+
 .noteTitle h3{
     padding: 5px;
     color: #fff;
     font-size: 14px;
-    font-weight: 300;
-    border-bottom: 2px solid #eee4;
+    font-weight: 200;
+    /* border-bottom: 2px solid #eee4; */
 }
 
 .noteContent{
@@ -158,13 +190,15 @@ body{
 }
 
 .noteContent p{
+    padding: 5px;
     color: #fff;
+    font-size: 12px;
     font-weight: 100;
 }
 
 .user{
     padding: 10px;
-    border-bottom: .5px solid #eee4;
+    /* border-bottom: .5px solid #eee4; */
 }
 
 .password{

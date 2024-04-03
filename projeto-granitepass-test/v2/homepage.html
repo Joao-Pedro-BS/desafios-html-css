@@ -41,16 +41,41 @@
         </div>
     </div>
 
+    <div class="error-balloon" class="hidden">
+        <span class="error-message">
+            <p>Sua busca não gerou resultados.<br>Tente Novamente!</p>
+        </span>
+    </div>
+
     <div id="screenCards">
             <div class="note">
                 <div class="noteTitle">
+                    <p>Site:</p>
                     <h3>{{ credential["site"] }}</h3>
                 </div>    
                 <div class="noteContent">
-                    <p class="user">{{ credential["user"] }}</p>
+                    <p>Usuário:</p>
+                    <p class="user" id="test">{{ credential["user"] }}</p>  
+                    
+                    <button onclick="copiarTexto()">copiar</button>
+                    
+                    <p>Senha:</p>
                     <p class="password">{{ credential["password"] }}</p>
                 </div>            
             </div>
     </div>
+    <script>
+        function copiarTexto() {
+            var elemento = document.getElementById('test');
+            var texto = elemento.textContent || elemento.innerText;
+            var textarea = document.createElement('textarea');
+            textarea.value = texto;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("Texto copiado: " + texto);        
+        }   
+    </script>
 </body>
 </html>

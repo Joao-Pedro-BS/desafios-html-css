@@ -10,6 +10,11 @@
     to{opacity: 1; transform: translateY(0);}
 }
 
+@keyframes entering-2 {
+    from{opacity: 0;}
+    to{opacity: 1; }
+}
+
 ::-webkit-scrollbar {
     width: 8px; 
 }
@@ -120,6 +125,29 @@ body{
 .Go-btn{
     display: flex;
     justify-content: center;
+}
+
+.error-balloon{
+    width: 350px;
+    height: 50px;
+    
+    border-radius: 16px;
+    border: 2px solid #247674;
+    background-color: transparent;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: entering-2;
+    animation-duration: 1s;
+}
+
+
+.error-message{
+    padding: 10px;
+    font-weight: 300;   
+    color: rgba(226, 20, 20, 0.916);
 }
 
 footer{
