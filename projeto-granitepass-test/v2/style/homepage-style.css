@@ -176,16 +176,6 @@ body{
     justify-content: space-between;
 }
 
-.noteTitleRight button{
-    background-color: #000000;
-    border: none;
-} 
-
-.noteTitleRight button img{
-    width: 15px;
-    height: 15px;
-}
-
 .noteTitle p{
     padding: 5px;
     color: #fff;
@@ -198,7 +188,24 @@ body{
     color: #fff;
     font-size: 14px;
     font-weight: 200;
-    /* border-bottom: 2px solid #eee4; */
+}
+.noteTitleRight button{
+    background-color: #000000;
+    border: none;
+} 
+
+.noteTitleRight button img{
+    width: 15px;
+    height: 15px;
+}
+
+.noteTitleRight button:hover{
+    cursor: pointer;
+} 
+
+.noteTitleRight button:active{
+    animation-name: entering-2;
+    animation-duration: 1s;
 }
 
 .noteContent{
@@ -206,6 +213,13 @@ body{
     overflow: hidden; 
     align-items: center;
     justify-content: space-between;
+}
+
+.noteContent p{
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
 }
 
 .noteContentRight button{
@@ -217,12 +231,13 @@ body{
     width: 15px;
     height: 15px;
 }
+.noteContentRight button:hover{
+    cursor: pointer;
+} 
 
-.noteContent p{
-    padding: 5px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 100;
+.noteContentRight button:active{
+    animation-name: entering-2;
+    animation-duration: 1s;
 }
 
 .noteContent2{
@@ -247,6 +262,15 @@ body{
 .noteContent2Right button img{
     width: 15px;
     height: 15px;
+}
+
+.noteContent2Right button:hover{
+    cursor: pointer;
+} 
+
+.noteContent2Right button:active{
+    animation-name: entering-2;
+    animation-duration: 1s;
 }
 
 .user{
