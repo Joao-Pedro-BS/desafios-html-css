@@ -31,6 +31,18 @@
     background: #808080; 
 }
 
+.note::-webkit-scrollbar{
+    width: 2px;
+}
+
+.note::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+.note::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -161,13 +173,18 @@ body{
     
     width: 348px;
     height: 200px;
+
+    overflow: auto;
+    white-space: wrap; 
+    text-overflow: ellipsis; 
     
     border: 1px solid #00DC82;
     border-radius: 16px;
     background-color: #000000;
     
     animation-name: entering-2;
-    animation-duration: 1s;    
+    animation-duration: 1s;
+    
 }
 
 .noteTitle{
@@ -275,8 +292,7 @@ body{
 
 .user{
     padding: 10px;
-    /* border-bottom: .5px solid #eee4; */
-}
+    }
 
 .password{
     padding: 10px;
