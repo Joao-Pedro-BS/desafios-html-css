@@ -32,6 +32,9 @@
             
         <div class="search">
             <input type="text" placeholder="look for your notes" autocomplete="off">
+            <button id="add-btn" onclick="addNote()">
+                <img src="assets/plus-square-svgrepo-com.svg" alt="">
+            </button>
             <img src="assets/search-svgrepo-com.svg" alt="">
         </div>  
 
@@ -51,7 +54,10 @@
         <div class="note">
             <div class="noteTitle">
                 <div class="noteTitleLeft">
-                    <p>Site:</p>
+                    <span>
+                        <p>Site:</p>
+                        <Button id="delete-btn" onclick="deleteNote(this)"><img src="assets/delete-svgrepo-com.svg" alt=""></Button>
+                    </span>
                     <h3 id="copy-site">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ducimus repudiandae, iure voluptas quis architecto laudantium dolor. Autem cupiditate magni voluptas aperiam provident quidem animi consequuntur. Minima officia hic reprehenderit.</h3>
                 </div>  
                 <div class="noteTitleRight">
@@ -61,7 +67,7 @@
 
             <div class="noteContent">
                 <div class="noteContentLeft">
-                    <p>Usuário:</p>
+                    <p>User:</p>
                     <p class="user" id="copy-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. At laboriosam esse repellendus atque, laudantium perferendis recusandae. Sequi temporibus porro doloremque distinctio, sint libero similique adipisci, nisi aperiam cumque laboriosam possimus.</p>  
                 </div>
                 <div class="noteContentRight">
@@ -71,7 +77,7 @@
 
             <div class="noteContent2">
                 <div class="noteContent2Left">  
-                    <p>Senha:</p>
+                    <p>Password:</p>
                     <p class="password" id="copy-password">{{ credential["password"] }}</p>
                 </div>
                 <div class="noteContent2Right">
@@ -117,7 +123,52 @@
             document.body.removeChild(textarea);
             // alert("Texto copiado: " + texto);        
         }   
+        
+        function addNote() {
+            var newNote = document.createElement('div');
+            newNote.className = 'note';
+            newNote.innerHTML = `
+            <div class="noteTitle">
+                <div class="noteTitleLeft">
+                    <span>
+                        <p>Site:</p>
+                        <Button id="delete-btn" onclick="deleteNote(this)"><img src="assets/delete-svgrepo-com.svg" alt=""></Button>
+                    </span>
+                    <h3 id="copy-site">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ducimus repudiandae, iure voluptas quis architecto laudantium dolor. Autem cupiditate magni voluptas aperiam provident quidem animi consequuntur. Minima officia hic reprehenderit.</h3>
+                </div>  
+                <div class="noteTitleRight">
+                    <button onclick="copySite()"><img src="assets/copy-svgrepo-com.svg" alt=""></button>
+                </div>       
+            </div>    
 
+            <div class="noteContent">
+                <div class="noteContentLeft">
+                    <p>User:</p>
+                    <p class="user" id="copy-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. At laboriosam esse repellendus atque, laudantium perferendis recusandae. Sequi temporibus porro doloremque distinctio, sint libero similique adipisci, nisi aperiam cumque laboriosam possimus.</p>  
+                </div>
+                <div class="noteContentRight">
+                    <button onclick="copyUser()"><img src="assets/copy-svgrepo-com.svg" alt=""></button>
+                </div>
+            </div>   
+
+            <div class="noteContent2">
+                <div class="noteContent2Left">  
+                    <p>Password:</p>
+                    <p class="password" id="copy-password">{{ credential["password"] }}</p>
+                </div>
+                <div class="noteContent2Right">
+                    <button onclick="copyPassword()"><img src="assets/copy-svgrepo-com.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    `;
+            document.getElementById('screenCards').appendChild(newNote);
+        }
+    
+        function deleteNote(btn) {
+            var note = btn.closest('.note');
+            note.parentNode.removeChild(note);
+        }
     </script>
 </body>
 </html>

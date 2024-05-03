@@ -114,6 +114,21 @@ body{
     transform: translate(-50%,-50%);
 }
 
+#add-btn{
+    background-color: #000000;
+    border: none;
+}
+
+#add-btn img{
+    width: 25px;
+    height: 25px;
+
+    position: absolute;
+    top: 12%;
+    left: 82%;
+    transform: translate(-50%,-50%);
+}
+
 .profile{
     gap: 10px;
     display: flex;
@@ -193,11 +208,27 @@ body{
     justify-content: space-between;
 }
 
+.noteTitle span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .noteTitle p{
     padding: 5px;
     color: #fff;
     font-size: 12px;
     font-weight: 100;
+}
+
+#delete-btn{
+    background-color: #000000;
+    border: none;
+}
+
+#delete-btn img{
+    width: 20px;
+    height: 20px;
 }
 
 .noteTitle h3{
